@@ -1,0 +1,25 @@
+{
+  "name": "react-redux-thunk-express-nightwatch-poc",
+  "version": "0.0.1",
+  "description": "POC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rammurat/react-redux-thunk-express-nightwatch-poc.git"
+  },
+  "keywords": [
+    "react",
+    "redux-thunk",
+    "express",
+    "nightwatch"
+  ],
+  "author": "Ram Murat Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rammurat/react-redux-thunk-express-nightwatch-poc/issues"
+  },
+  "homepage": "https://github.com/rammurat/react-redux-thunk-express-nightwatch-poc#readme"
+}
