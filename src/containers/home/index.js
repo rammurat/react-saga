@@ -2,7 +2,7 @@ import React from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 
-import { requestHomePage } from "../../actions";
+import { requestHomePage } from "../../actions/home";
 
 class Home extends React.Component {
   componentDidMount() {
@@ -12,13 +12,13 @@ class Home extends React.Component {
   render() {
     return (
       <h1>
-        {this.props.helloWorld}
+        {this.props.homePage}
       </h1>
     );
   }
 }
 
-const mapStateToProps = state => ({ helloWorld: state.helloWorld });
+const mapStateToProps = state => ({ homePage: state.homePage });
 
 const mapDispatchToProps = dispatch =>
   bindActionCreators({ requestHomePage }, dispatch);

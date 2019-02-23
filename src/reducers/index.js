@@ -1,7 +1,9 @@
 import { combineReducers } from "redux";
 
-import helloWorld from "./home";
+import homePage from "./home";
+import pspPage from "./psp";
 
 export default combineReducers({
-  helloWorld
+  homePage,
+  pspPage
 });
