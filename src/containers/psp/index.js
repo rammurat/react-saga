@@ -2,6 +2,7 @@ import React from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 
+// load actions
 import { requestPSPPage } from "../../actions/psp";
 
 class PSP extends React.Component {

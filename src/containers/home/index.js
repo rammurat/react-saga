@@ -2,6 +2,7 @@ import React from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 
+// load all actions
 import { requestHomePage } from "../../actions/home";
 
 class Home extends React.Component {

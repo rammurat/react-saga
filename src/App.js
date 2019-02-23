@@ -3,7 +3,10 @@ import { Provider } from "react-redux";
 import {BrowserRouter as Router} from 'react-router-dom'
 import Route from 'react-router-dom/Route'
 
+//Load final store
 import store from "./store";
+
+//Load all containers
 import Home from "./containers/home";
 import PSP from "./containers/psp";
 
