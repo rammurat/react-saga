@@ -7,8 +7,8 @@ import Route from 'react-router-dom/Route'
 import store from "./store";
 
 //Load all containers
-import Home from "./containers/home";
-import PSP from "./containers/psp";
+import Home from "./containers/home/index.jsx";
+import PSP from "./containers/psp/index.jsx";
 
 export default class App extends Component {
   render() {

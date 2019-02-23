@@ -1,4 +1,4 @@
-export const Header = {
+export const HeaderData = {
     super_header : [{
         key: 'store-finder',
         text: 'Store Finder',

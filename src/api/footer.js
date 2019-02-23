@@ -1,4 +1,4 @@
-export const Footer = {
+export const FooterData = {
     about : [{
         key: 'career',
         text: 'Career',
