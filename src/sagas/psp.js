@@ -12,7 +12,6 @@ function* pspPage(action) {
   try {
     // do api call here
     const data = {HeaderData, PSPPageData, FooterData}
-    debugger
     yield put(receivePSPPage(data));
   } catch (e) {
     // handle any exception here

@@ -8,7 +8,7 @@ const Header = ({super_header, top_nav}) => {
             <h1>Super header</h1>
             <ul className="flex-container nowrap">
                 {super_header.map((row) => (
-                    <li className="flex-item">
+                    <li className="flex-item" key={row.key}>
                     <Link to={row.link}>{row.text}</Link>
                     </li>          
                 ))}
@@ -17,7 +17,7 @@ const Header = ({super_header, top_nav}) => {
             <h1>Top navigation</h1>
             <ul className="flex-container nowrap">
                 {top_nav.men.clothing.map((row) => (
-                    <li className="flex-item">
+                    <li className="flex-item" key={row.key}>
                     <Link to={row.link}>{row.text}</Link>
                     </li>          
                 ))}
@@ -27,7 +27,7 @@ const Header = ({super_header, top_nav}) => {
 }
 
 Header.propTypes = {
-    super_header: PropTypes.object,
+    super_header: PropTypes.array,
     top_nav: PropTypes.object
 }
 

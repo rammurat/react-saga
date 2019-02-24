@@ -18,7 +18,6 @@ class PSP extends React.Component {
   render() {
     const {HeaderData, PSPPageData, FooterData} = this.props.pspPage
     const {title, categories} = PSPPageData ? PSPPageData : {}
-    debugger
 
     if(!categories) {
       return ''
@@ -30,7 +29,7 @@ class PSP extends React.Component {
         <h1>{title}</h1>
         <ul className="flex-container wrap">
           {categories.men.clothing.map((row) => (
-            <li className="flex-item">
+            <li className="flex-item" key={row.key}>
               <Link to={row.link}><img src={row.image} alt='' width="300" height="400"/></Link>
               <h3>{row.text}</h3>
             </li>          

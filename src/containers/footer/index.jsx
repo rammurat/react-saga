@@ -8,15 +8,15 @@ const Footer = ({about, customer_services}) => {
             <h1>Footer</h1>
             <ul className="flex-container nowrap">
                 {about.map((row) => (
-                    <li className="flex-item">
+                    <li className="flex-item" key={row.key}>
                     <Link to={row.link}>{row.text}</Link>
                     </li>          
                 ))}
             </ul>
             <ul className="flex-container nowrap">
                 {customer_services.map((row) => (
-                    <li className="flex-item">
-                    <Link to={row.link}>{row.text}</Link>
+                    <li className="flex-item" key={row.key}>
+                        <Link to={row.link}>{row.text}</Link>
                     </li>          
                 ))}
             </ul>
@@ -25,8 +25,8 @@ const Footer = ({about, customer_services}) => {
 }
 
 Footer.propTypes = {
-    about: PropTypes.object,
-    customer_services: PropTypes.object
+    about: PropTypes.array,
+    customer_services: PropTypes.array
 }
 
 export default Footer
