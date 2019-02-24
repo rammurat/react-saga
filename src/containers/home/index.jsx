@@ -24,15 +24,15 @@ class Home extends React.Component {
     }
 
     return (
-      <div>
+      <div className="psp">
         <Header {...HeaderData}/>
         <h1>{title}</h1>
-        <Link to={banner.link}><img src={banner.image} alt='banner'/></Link>
-        <ul>
+        <div className='banner'><Link to={banner.link}><img src={banner.image} alt='banner'/></Link></div>
+        <ul className="flex-container wrap">
           {uber_components.data.map((row) => (
-            <li>
+            <li className="flex-item">
               <h3>{row.title}</h3>
-              <Link to={row.link}><img src={row.image} alt=''/></Link>
+              <Link to={row.link}><img src={row.image} width="300" height="400" alt=''/></Link>
             </li>          
           ))}
         </ul>

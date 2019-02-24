@@ -28,10 +28,10 @@ class PSP extends React.Component {
       <div>
         <Header {...HeaderData}/>
         <h1>{title}</h1>
-        <ul>
+        <ul className="flex-container wrap">
           {categories.men.clothing.map((row) => (
-            <li>
-              <Link to={row.link}><img src={row.image} alt=''/></Link>
+            <li className="flex-item">
+              <Link to={row.link}><img src={row.image} alt='' width="300" height="400"/></Link>
               <h3>{row.text}</h3>
             </li>          
           ))}

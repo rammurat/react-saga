@@ -1,5 +1,5 @@
 export const HomePageData = {
-    title: 'Welcome to Redux Saga',
+    title: 'This is a Home page',
     banner : {
         key: 'banner',
         image: 'images/banner.jpg',

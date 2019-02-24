@@ -1,5 +1,5 @@
 export const PSPPageData = {
-    title: 'Welcome to Redux Saga',
+    title: 'This is a PSP page',
     categories : {
         men: {
             clothing: [{
@@ -11,7 +11,7 @@ export const PSPPageData = {
                 key: 'jackets',
                 text: 'Jackets',
                 link: '/pdp/2',
-                image: '../images/men.jpg'
+                image: '../images/women.jpg'
             }],
             shoes: [{
                 key: 'boots',

@@ -5,16 +5,17 @@ import PropTypes from 'prop-types';
 const Footer = ({about, customer_services}) => {
     return (
         <footer>
-            <ul>
+            <h1>Footer</h1>
+            <ul className="flex-container nowrap">
                 {about.map((row) => (
-                    <li>
+                    <li className="flex-item">
                     <Link to={row.link}>{row.text}</Link>
                     </li>          
                 ))}
             </ul>
-            <ul>
+            <ul className="flex-container nowrap">
                 {customer_services.map((row) => (
-                    <li>
+                    <li className="flex-item">
                     <Link to={row.link}>{row.text}</Link>
                     </li>          
                 ))}
