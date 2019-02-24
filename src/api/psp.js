@@ -1,59 +1,39 @@
-export const HeaderData = {
-    super_header : [{
-        key: 'store-finder',
-        text: 'Store Finder',
-        link: '/store-finder'
-    }, {
-        key: 'create-account',
-        text: 'Create Account',
-        link: '/create-account'
-    }],
-    top_nav : {
+export const PSPPageData = {
+    title: 'Welcome to Redux Saga',
+    categories : {
         men: {
             clothing: [{
                 key: 'coats',
                 text: 'Coats',
-                link: '/psp/coats'
+                link: '/pdp/1',
+                image: '../images/men.jpg'
             }, {
                 key: 'jackets',
                 text: 'Jackets',
-                link: '/psp/jackets'
+                link: '/pdp/2',
+                image: '../images/men.jpg'
             }],
             shoes: [{
                 key: 'boots',
                 text: 'Boots',
-                link: '/psp/boots'
+                link: '/pdp/3',
+                image: '../images/men.jpg'
             }, {
                 key: 'casual',
                 text: 'Casual',
-                link: '/psp/casual'
+                link: '/pdp/4',
+                image: '../images/men.jpg'
             }],
             bags: [{
                 key: 'watches',
                 text: 'Watches',
-                link: '/psp/watches'
+                link: '/pdp/5',
+                image: '../images/men.jpg'
             }, {
                 key: 'ties',
                 text: 'Ties',
-                link: '/psp/ties'
-            }],
-            offers: [{
-                key: 'all-men',
-                text: 'All men',
-                link: '/psp/all-men'
-            }, {
-                key: 'buy-1-get-1',
-                text: 'Buy 1 Get 1',
-                link: '/psp/buy-1-get-1'
-            }],
-            sale: [{
-                key: 'shirts-sale',
-                text: 'Shirts sale',
-                link: '/psp/shirts-sale'
-            }, {
-                key: 'jeans-sale',
-                text: 'Jeans sale',
-                link: '/psp/jeans-sale'
+                link: '/pdp/6',
+                image: '../images/men.jpg'
             }]
         },
         women: {

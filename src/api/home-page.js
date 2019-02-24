@@ -3,7 +3,7 @@ export const HomePageData = {
     banner : {
         key: 'banner',
         image: 'images/banner.jpg',
-        link: '/sale'
+        link: '/psp/sale'
     }, 
     uber_components: {
         key: 'uber-components',
@@ -11,12 +11,12 @@ export const HomePageData = {
             key: 'mens',
             image: 'images/men.jpg',
             title: 'Mens collection',
-            link: '/mens'
+            link: '/psp/mens'
         }, {
             key: 'women',
             image: 'images/women.jpg',
             title: 'Women collection',
-            link: '/women'
+            link: '/psp/women'
         }]
     }
 }

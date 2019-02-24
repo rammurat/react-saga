@@ -22,7 +22,7 @@ class Home extends React.Component {
     if(!title) {
       return ''
     }
-debugger
+
     return (
       <div>
         <Header {...HeaderData}/>

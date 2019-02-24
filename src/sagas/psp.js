@@ -2,11 +2,18 @@ import { put, takeLatest } from "redux-saga/effects";
 
 import { REQUEST_PSP_PAGE, receivePSPPage } from "../actions/psp";
 
+// load data
+import {PSPPageData} from '../api/psp'
+import {FooterData} from '../api/footer'
+import {HeaderData} from '../api/header'
+
 // worker Saga: will be fired on REQUEST_PSP_PAGE actions
 function* pspPage(action) {
   try {
     // do api call here
-    yield put(receivePSPPage("PSP page loaded with API!"));
+    const data = {HeaderData, PSPPageData, FooterData}
+    debugger
+    yield put(receivePSPPage(data));
   } catch (e) {
     // handle any exception here
     yield put(receivePSPPage("PSP page load fail!"));
