@@ -1,5 +1,5 @@
 # Step 1 - Install node modules
-`npm run start`
+`npm install`
 
 # Step 2 - Run application
 `npm run start`
